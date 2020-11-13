@@ -1,0 +1,112 @@
+body {
+
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.headernav {
+    font-family: 'Arvo', serif;
+    overflow: hidden;
+    background-color: #333;
+    width: 95%;
+    float: center;
+    margin-left: 2%;
+}
+
+
+.headernav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    padding-right: 2em;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.headernav img {
+    float: left;
+    padding: 5px 5px;
+    height: 47px;
+}
+
+
+.headernav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.column {
+    float: center;
+    width: 35%;
+    padding-left: 30%;
+    padding-top: 2em;
+}
+
+
+.card {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    float: center;
+
+}
+
+.card h2 {
+    text-align: center;
+}
+
+
+.btn {
+    float: center;
+    margin-left: 10em;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.125;
+    padding: 0.5em 1.25em;
+    background: #e63946;
+    border-radius: 0.25em;
+    transition: transform 250ms ease-in-out, opacity 250ms linear;
+    opacity: 0.7;
+}
+
+.btn:hover,
+.btn:focus {
+
+    opacity: 1;
+}
+
+.article-1 {
+    background: #a8dadc;
+    padding: 3em;
+    border-radius: 1em;
+}
+
+.forumcontainer {
+    text-align: right;
+    padding-right: 4em;
+
+}
+
+.titleop3 {
+    text-align: center;
+    font-size: clamp(0.5rem, calc(5vw + 1rem), 2.5rem);
+    padding-bottom: 1em;
+}
+
+.article-2 {
+    background: #2c83a5;
+    padding: 3em;
+    border-radius: 1em;
+}
+
+
+@media (max-width: 700px) {
+    .card {
+        display: block;
+    }
+}
