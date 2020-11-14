@@ -7,7 +7,7 @@ body {
 .headernav {
     font-family: 'Arvo', serif;
     overflow: hidden;
-    background-color: #333;
+    background-color: #9b8e97;
     width: 95%;
     float: center;
     margin-left: 2%;
@@ -27,14 +27,14 @@ body {
 
 .headernav img {
     float: left;
-    padding: 5px 5px;
-    height: 47px;
+
+    height: 58px;
 }
 
 
 .headernav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #c6cbcf;
+    color: #4d4d4a;
 }
 
 .leftcolumn {
