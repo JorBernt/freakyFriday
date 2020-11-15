@@ -79,6 +79,12 @@ body {
     transition: transform 250ms ease-in-out, opacity 250ms linear;
 }
 
+.gallery_item:hover,
+.gallery_item:focus {
+    transform: scale(1.2);
+    transition: transform 250ms ease-in-out, opacity 250ms linear;
+}
+
 
 
 @media (max-width : 1023px) {
