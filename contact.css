@@ -1,35 +1,49 @@
-body {
 
-    padding: 10px;
+body {
+    margin: 30px 50px;
     background: #f1f1f1;
     font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.main-header {
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: #9b8e97;
+    display: flex;
+    justify-content: space-between;
 }
 
 .headernav {
+    display: flex;
+    justify-content: space-between;
     font-family: 'Arvo', serif;
-    overflow: hidden;
-    background-color: #9b8e97;
-    width: 95%;
-    float: center;
-    margin-left: 2%;
+    align-items: center;
+    height: 100%;
 }
 
 
 .headernav a {
-    float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
-    padding-right: 2em;
     text-decoration: none;
-    font-size: x-large;
+    font-size: large;
+    padding: 20.4px 1rem;
+    padding-right: 3rem;
 }
 
-.headernav img {
-    float: left;
+.logo {
 
-    height: 58px;
+    height: 100%;
+
+    margin-left: 0;
+}
+
+.image_container {
+    margin-left: 0;
 }
 
 
@@ -37,77 +51,58 @@ body {
     background-color: #c6cbcf;
     color: #4d4d4a;
 }
-
-.column {
-    float: center;
-    width: 35%;
-    padding-left: 30%;
-    padding-top: 2em;
+.formcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
-
-.card {
-    border-radius: 10px;
+.form {
     background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    float: center;
-
+    padding: 5% 10%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.card h2 {
-    text-align: center;
+.form_element {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
 }
-
 
 .btn {
-    float: center;
-    margin-left: 10em;
-    display: inline-block;
     text-decoration: none;
     color: #4d4d4a;
     font-weight: 700;
-    font-size: 1.125;
+    font-size: medium;
     padding: 0.5em 1.25em;
-    background: #c6cbcf;
+    background: #9b8e97;
     border-radius: 0.25em;
     transition: transform 250ms ease-in-out, opacity 250ms linear;
-    opacity: 0.7;
 }
 
 .btn:hover,
 .btn:focus {
 
-    opacity: 1;
-}s
-
-.article-1 {
-    background: #a8dadc;
-    padding: 3em;
-    border-radius: 1em;
-}
-
-.forumcontainer {
-    text-align: right;
-    padding-right: 4em;
-
-}
-
-.titleop3 {
-    text-align: center;
-    font-size: clamp(0.5rem, calc(5vw + 1rem), 2.5rem);
-    padding-bottom: 1em;
-}
-
-.article-2 {
-    background: #2c83a5;
-    padding: 3em;
-    border-radius: 1em;
+    opacity: 0.7;
 }
 
 
-@media (max-width: 700px) {
-    .card {
-        display: block;
+@media (max-width : 1023px) {
+    .image_container {
+        display: none
+    }
+    .main-header {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .headernav a {
+        font-size: small;
+        padding-right: 1rem;
     }
 }

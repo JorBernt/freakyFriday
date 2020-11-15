@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,47 +9,42 @@
     <link rel="stylesheet" href="gallery.css">
     <title>Gallery</title>
 </head>
-<header class="main-header">
-    <div class="headernav">
-        <img src="img/logo.png" alt="">
 
-        <a href="contact.html" >Kontakt</a>
-        <a href="gallery.html" >Galleri</a>
-        <a href="home.html" >Hjem</a>
-    </div>
-</header>
 <body>
 
-<div class="row">
-    <div class="leftcolumn">
-        <div class="gallerycard">
-            <img src="img/img_1.jpg">
-            <h3>"Uten tittel"</h3>
-        </div>
-        <div class="gallerycard">
-            <img src="img/img_2.jpg">
-            <h3>"Vinterlandskap"</h3>
-        </div>
-        <div class="gallerycard">
-            <img src="img/img_3.jpg">
-            <h3>"Flom I"</h3>
-        </div>
+<header class="main-header">
+    <div class="image_container">
+        <img class="logo" src="img/logo.png" alt="" width="150" height="50">
     </div>
-    <div class="rightcolumn">
-        <div class="gallerycard">
-            <img src="img/img_4.jpg">
-            <h3>"Før soloppgang i vårskogen - Med melankolsk figur"</h3>
-        </div>
-        <div class="gallerycard">
-            <img src="img/img_5.jpg">
-            <h3>"Vårlandskap III"</h3>
-        </div>
-        <div class="gallerycard">
-            <img src="img/img_6.jpg">
-            <h3>"Trett modellflybygger"</h3>
-        </div>
+    <div class="headernav">
+        <a href="home.html">Hjem</a>
+        <a href="gallery.html">Galleri</a>
+        <a href="contact.html">Kontakt</a>
+
+    </div>
+</header>
+
+<div class="grid_container">
+    <div class="gallery_item pic_1"><img class="pic" src="img/img_1.jpg" height="200px">
+        <h3>"Uten tittel"</h3>
+    </div>
+    <div class="gallery_item pic_2"><img class="pic" src="img/img_2.jpg" height="200px">
+        <h3>"Vinterlandskap"</h3>
+    </div>
+    <div class="gallery_item pic_3"><img class="pic" src="img/img_3.jpg" height="200px">
+        <h3>"Flom I"</h3>
+    </div>
+    <div class="gallery_item pic_4"><img class="pic" src="img/img_4.jpg" height="200px">
+        <h3>"Før soloppgang i vårskogen - Med melankolsk figur"</h3>
+    </div>
+    <div class="gallery_item pic_5"><img class="pic" src="img/img_5.jpg" height="200px">
+        <h3>"Vårlandskap III"</h3>
+    </div>
+    <div class="gallery_item pic_6"><img class="pic" src="img/img_6.jpg" height="200px">
+        <h3>"Trett modellflybygger"</h3>
     </div>
 </div>
 
 </body>
+
 </html>

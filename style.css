@@ -1,10 +1,6 @@
-*{
-    margin: 0;
-
-}
 
 body {
-    margin: 30px 30px;
+    margin: 30px 50px;
     background: #f1f1f1;
     font-family: 'Titillium Web', sans-serif;
     box-sizing: border-box;
@@ -12,20 +8,12 @@ body {
 }
 
 .main-header {
-
     top: 0;
-    left:10px;
-    right: 10px;
     width: 100%;
-    position: sticky;
     height: 4rem;
     background-color: #9b8e97;
     display: flex;
     justify-content: space-between;
-
-
-
-
 }
 
 .headernav {
@@ -38,7 +26,6 @@ body {
 
 
 .headernav a {
-
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -46,18 +33,17 @@ body {
     font-size: large;
     padding: 20.4px 1rem;
     padding-right: 3rem;
-
-}
-
-.image_container {
-
-    height: 100%;
 }
 
 .logo {
-    object-fit: contain;
+
     height: 100%;
-    width: 100%;
+
+    margin-left: 0;
+}
+
+.image_container {
+    margin-left: 0;
 }
 
 
@@ -67,55 +53,55 @@ body {
 }
 
 .main {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
 }
 
 .row {
-
     display: flex;
-
-    margin-top: 5rem;
+    flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 5rem;
     align-items: center;
-    height: 50vh;
-    width: 100vw;
+    height: 50%;
+    width: 100%;
 }
-.leftcolumn {
 
+.leftcolumn {
     width: 50%;
-    height: 100%;
+    height:100%;
+    max-width: 30rem;
     margin-right: 5rem;
     margin-left: 5rem;
-
 }
-
 
 .rightcolumn {
-
+    display: flex;
+    justify-content: start;
+    align-items: center;
     width: 50%;
     height: 100%;
+    max-width: 30rem;
     margin-right: 5rem;
     margin-left: 5rem;
-
 }
-
 
 .card {
     border-radius: 10px;
-    background-color: gray;
-
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding: 2rem;
 
 }
 
 .card p {
-
     overflow: hidden;
     text-overflow: ellipsis;
     height: 80%;
@@ -123,27 +109,21 @@ body {
 
 .card h2 {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 
 .profile_pic {
-
     display: block;
     border-radius: 10px;
-    height: 250px;
-    margin: 2rem;
-    object-fit: contain;
-
-
+    height: 500px;
 }
-
 
 .btn {
     display: block;
     text-decoration: none;
     color: #4d4d4a;
     font-weight: 700;
-    font-size: 1.125;
     padding: 0.5em 1.25em;
     background: #c6cbcf;
     border-radius: 0.25em;
@@ -160,8 +140,35 @@ body {
     opacity: 1;
 }
 
-@media (max-width: 700px) {
+@media (max-width : 1023px) {
     .row {
         flex-direction: column;
+        gap: 5rem;
+    }
+    .rightcolumn {
+        justify-content: center;
+        width: 100%;
+    }
+    .leftcolumn {
+        width: 100%;
+    }
+    .image_container {
+        display: none
+    }
+    .main-header {
+        justify-content: center;
+    }
+    .profile_pic {
+        height: 630px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .headernav a {
+        font-size: small;
+        padding-right: 1rem;
+    }
+    .profile_pic {
+        height: 370px;
     }
 }
